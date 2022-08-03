@@ -24,9 +24,9 @@ NOTE: The response is a PowerShell object formatted as a JSON for readability. P
 
 ```powershell
 Update-CsTeamTemplate -OdataId <String> -DisplayName <String> -ShortDescription <String>
- [-App <ITeamsAppTemplate[]>] [-Category <String[]>] [-Channel <IChannelTemplate[]>]
+ [-App <ITeamsAppTemplate[]>]  [-Channel <IChannelTemplate[]>]
  [-Classification <String>] [-Description <String>] [-DiscoverySetting <ITeamDiscoverySettings>]
- [-FunSetting <ITeamFunSettings>] [-GuestSetting <ITeamGuestSettings>] [-Icon <String>]
+ [-FunSetting <ITeamFunSettings>] [-GuestSetting <ITeamGuestSettings>] 
  [-IsMembershipLimitedToOwner] [-MemberSetting <ITeamMemberSettings>]
  [-MessagingSetting <ITeamMessagingSettings>] [-OwnerUserObjectId <String>] [-PublishedBy <String>]
  [-Specialization <String>] [-TemplateId <String>] [-Uri <String>] [-Visibility <String>] [-Break] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -55,10 +55,10 @@ Update-CsTeamTemplate -InputObject <IConfigApiBasedCmdletsIdentity> -Body <ITeam
 
 ```powershell
 Update-CsTeamTemplate -InputObject <IConfigApiBasedCmdletsIdentity> -DisplayName <String>
- -ShortDescription <String> [-App <ITeamsAppTemplate[]>] [-Category <String[]>]
+ -ShortDescription <String> [-App <ITeamsAppTemplate[]>] 
  [-Channel <IChannelTemplate[]>] [-Classification <String>] [-Description <String>]
  [-DiscoverySetting <ITeamDiscoverySettings>] [-FunSetting <ITeamFunSettings>]
- [-GuestSetting <ITeamGuestSettings>] [-Icon <String>] [-IsMembershipLimitedToOwner]
+ [-GuestSetting <ITeamGuestSettings>]  [-IsMembershipLimitedToOwner]
  [-MemberSetting <ITeamMemberSettings>] [-MessagingSetting <ITeamMessagingSettings>]
  [-OwnerUserObjectId <String>] [-PublishedBy <String>] [-Specialization <String>] [-TemplateId <String>]
  [-Uri <String>] [-Visibility <String>] [-Break]
@@ -161,9 +161,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Category
+<!-- ### -Category -->
 
-Gets or sets list of categories.
+<!-- Gets or sets list of categories. -->
 
 ```yaml
 Type: System.String[]
@@ -293,9 +293,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Icon
+<!-- ### -Icon -->
 
-Gets or sets template icon.
+<!-- Gets or sets template icon. -->
 
 ```yaml
 Type: System.String
